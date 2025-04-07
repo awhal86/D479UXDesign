@@ -1,0 +1,80 @@
+.contact-section {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-image img:hover {
+    transform: scale(1.05);
+}
+
+.contact-info {
+    max-width: 600px;
+    margin-left: 2rem;
+}
+
+.contact-info h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-info li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.contact-info li strong {
+    font-weight: bold;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center; /* Center the content */
+    }
+
+    .contact-image {
+        margin-bottom: 1rem; /* Add space below the image */
+    }
+
+    .contact-info {
+        margin-left: 0;
+        text-align: center; /* Center the text on mobile */
+    }
+
+    .contact-info h1 {
+        font-size: 1.5rem;
+    }
+}

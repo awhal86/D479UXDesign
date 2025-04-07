@@ -1,0 +1,131 @@
+.activities-container {
+    padding: 20px;
+}
+
+.free-container, 
+.museums-container, 
+.excursions-container, 
+.indoor-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.free-container .free-card, 
+.museums-container .museum-card, 
+.excursions-container .excursion-card, 
+.indoor-container .indoor-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 15px;
+    text-align: center;
+}
+
+.free-container .free-card img, 
+.museums-container .museum-card img, 
+.excursions-container .excursion-card img, 
+.indoor-container .indoor-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.free-container .free-card:hover, 
+.museums-container .museum-card:hover, 
+.excursions-container .excursion-card:hover, 
+.indoor-container .indoor-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+h3 {
+    color: #333;
+    margin-top: 15px;
+}
+
+p {
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Nightlife and Coming Soon containers (1 column) */
+.nightlife-card, .coming-soon-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.nightlife-card:hover, 
+.coming-soon-card:hover {
+    transform: translateY(-5px);
+}
+
+.nightlife-card img, .coming-soon-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.nightlife-card h3, .coming-soon-card h3 {
+    color: #333;
+    margin-top: 15px;
+}
+
+.nightlife-card p, .coming-soon-card p {
+    color: #777;
+    margin-top: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.coming-soon {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .free-container, 
+    .museums-container, 
+    .excursions-container,
+    .indoor-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+
+}
+
+@media (max-width: 768px) {
+    .free-container, .museums-container, .excursions-container {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+
+    .nightlife-card, .coming-soon-card {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,188 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333333;
+    color: white;
+    padding: .6rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hide the logo on desktop view */
+@media (min-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: #21e5ff;
+}
+
+/* Hide Contact Us and FAQ on desktop */
+.mobile-only {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.hamburger-icon:hover {
+    color:#21e5ff
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Show the logo on mobile */
+    .logo {
+        display: block;
+        z-index: 20;
+    }
+
+    
+    /* Hide the navigation links by default on mobile */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        height: 90vh;
+        left: -250px;
+        right: 0;
+        background-color: #333;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 250px;
+        transition: left 0.3s ease;
+    }
+
+
+    /* Show the hamburger icon */
+    .hamburger-icon {
+        display: block;
+    }
+
+    /* Show navigation links when hamburger is clicked */
+    .nav-links.active {
+        display: flex; /* When 'active' is added to .nav-links, it will be shown */
+        z-index: 10;
+        left: calc(100vw - 250px);
+    
+    }
+
+    /* Show mobile-only items in hamburger menu */
+    .mobile-only {
+        display: block;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 1rem;
+    gap: 12rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: 1 1 45%;
+}
+
+.footer-link li {
+    margin: 0.5rem 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+    }
+}
