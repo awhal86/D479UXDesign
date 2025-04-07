@@ -25,7 +25,7 @@ nav {
     font-weight: bold;
 }
 
-/* Hide the logo on desktop view */
+
 @media (min-width: 768px) {
     .logo {
         display: none;

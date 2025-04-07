@@ -1,14 +1,12 @@
-/* Main container for restaurant cards */
 .restaurant-container,
 .pub-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
     text-align: center;
 }
 
-/* Styling for each restaurant card */
 .restaurant-card,
 .pub-card {
     background-color: #fff;
@@ -43,20 +41,17 @@
     color: #666;
 }
 
-/* Styling for food type */
 .food-type {
     font-weight: bold;
-    color: #008000; /* Green for local food, adjust for other types */
+    color: #008000; 
     padding: 0 15px;
     margin-bottom: 10px;
 }
 
-/* Hover effect */
 .restaurant-card:hover {
     transform: translateY(-5px);
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .restaurant-container {
         grid-template-columns: repeat(2, 1fr);

@@ -35,11 +35,11 @@
     color: #666;
 }
 
-/* Grocery & Souvenir Cards (2 columns per row) */
+
 .grocery-container,
 .souvenir-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
 }
 
@@ -74,7 +74,7 @@
     color: #666;
 }
 
-/* Hover effect */
+
 .convenience-card:hover,
 .mall-card:hover,
 .grocery-card:hover,
@@ -82,15 +82,13 @@
     transform: translateY(-5px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
-    /* For smaller screens, use 2 columns for convenience, mall, grocery, and souvenir cards */
     .grocery-container,
     .souvenir-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* For very small screens (like mobile), use 1 column */
     .shop-container {
         grid-template-columns: 1fr;
     }
@@ -99,6 +97,6 @@
 @media (max-width: 768px) {
     .grocery-container,
     .souvenir-container {
-        grid-template-columns: 1fr; /* 1 column per row */
+        grid-template-columns: 1fr;
     }
 }

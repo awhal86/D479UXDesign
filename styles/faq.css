@@ -1,5 +1,5 @@
 
-/* Main Section */
+
 main {
     padding: 2rem;
     max-width: 1000px;
@@ -13,7 +13,7 @@ section {
     padding: 2rem;
 }
 
-/* FAQ Header */
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -21,7 +21,7 @@ h1 {
     color: #333;
 }
 
-/* FAQ Question Styles */
+
 h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -34,7 +34,7 @@ h3:hover {
     color: #007BFF;
 }
 
-/* FAQ Answer Styles */
+
 p {
     font-size: 1rem;
     line-height: 1.6;
@@ -43,7 +43,7 @@ p {
     text-align: center;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     main {
         padding: 1rem;
