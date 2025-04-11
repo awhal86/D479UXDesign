@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Load the nav.html and footer.html content
     Promise.all([
-        loadContent('/components/nav.html', 'nav'),
-        loadContent('/components/footer.html', 'footer')
+        loadContent('./components/nav.html', 'nav'),
+        loadContent('./components/footer.html', 'footer')
     ]).then(([navLoaded, footerLoaded]) => {
         if (navLoaded) {
             // Once nav.html is successfully loaded, set up the hamburger icon
