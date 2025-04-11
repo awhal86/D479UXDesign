@@ -41,7 +41,7 @@ hr {
 .hero {
     height: calc(100vh - 3.1rem);
     width: 100%;
-    background-image: url('./assets/island-photo-2.jpg');
+    background-image: url('../assets/island-photo-2.jpg');
     background-size: cover;
     background-position: center;
     color: white;
