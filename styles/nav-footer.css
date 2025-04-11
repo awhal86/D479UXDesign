@@ -55,7 +55,7 @@ nav {
     color: #21e5ff;
 }
 
-/* Hide Contact Us and FAQ on desktop */
+
 .mobile-only {
     display: none;
 }
@@ -71,16 +71,14 @@ nav {
     color:#21e5ff
 }
 
-/* Mobile Styles */
+
 @media (max-width: 768px) {
-    /* Show the logo on mobile */
     .logo {
         display: block;
         z-index: 20;
     }
 
     
-    /* Hide the navigation links by default on mobile */
     .nav-links {
         display: none;
         position: absolute;
@@ -97,31 +95,27 @@ nav {
     }
 
 
-    /* Show the hamburger icon */
+
     .hamburger-icon {
         display: block;
     }
 
-    /* Show navigation links when hamburger is clicked */
     .nav-links.active {
-        display: flex; /* When 'active' is added to .nav-links, it will be shown */
+        display: flex; 
         z-index: 10;
         left: calc(100vw - 250px);
     
     }
 
-    /* Show mobile-only items in hamburger menu */
     .mobile-only {
         display: block;
     }
 }
 
-/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     padding: 2rem;
-    
 }
 
 .footer-container {
@@ -139,6 +133,10 @@ footer {
     max-width: 800px;
     margin-bottom: 1rem;
     gap: 12rem;
+}
+
+.footer-links a:hover {
+    color: #21e5ff;
 }
 
 .footer-links ul {
@@ -174,10 +172,9 @@ footer {
 }
 
 .social-media img:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1); 
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .footer-links {
         flex-direction: row;
