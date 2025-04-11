@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    const isNestedPage = this.location.pathname.includes('/pages');
+    const prefix = isNestedPage ? '/D479UXDesign' : './';
     // Helper function to fetch and inject HTML content
     const loadContent = (url, containerId) => {
         return fetch(url)
@@ -16,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Load the nav.html and footer.html content
     Promise.all([
-        loadContent('../components/nav.html', 'nav'),
-        loadContent('../components/footer.html', 'footer')
+        loadContent('${prefix}components/nav.html', 'nav'),
+        loadContent('${prefix}components/footer.html', 'footer')
     ]).then(([navLoaded, footerLoaded]) => {
         if (navLoaded) {
             // Once nav.html is successfully loaded, set up the hamburger icon
