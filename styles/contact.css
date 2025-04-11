@@ -1,3 +1,7 @@
+main {
+    min-height: 80vh;
+}
+
 .contact-section {
     padding: 2rem;
     display: flex;
