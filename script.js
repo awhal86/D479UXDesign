@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const prefix = location.pathname.includes ('/pages/') ? '../' : './';
     // Helper function to fetch and inject HTML content
     const loadContent = (url, containerId) => {
         return fetch(url)
