@@ -43,8 +43,13 @@
             rest of the island. Taxis are available in the city, and cars can be rented from a local agency near the aitport. Bikes and helmets are available to rent from several vendors (helmets are required by law). 
         </p>
 
-        <hr>
+        <div class="transport-filter">
+            <button class="transport-btn active" data-filter="all">All</button>
+            <button class="transport-btn" data-filter="to">To the Island</button>
+            <button class="transport-btn" data-filter="on">On the Island</button>
+        </div>
 
+        <div class="transport-section" data-category="to">
         <h2 class="subtitle">To the Island</h2>
             <div class="air-container">
 
@@ -87,9 +92,10 @@
                     in coral reefs, and enjoying cultural performances.
                 </p>
             </div>
+        </div>
 
-        <hr>
 
+        <div class="transport-section" data-category="on">
         <h2 class="subtitle">On the Island</h2>
 
         <div class="public-card">
@@ -145,6 +151,8 @@
             </div>
 
             <p><i>*You can also find bike rentals from locals along the island.</i></p>
+        </div>
+
         </div>
     </main>
 

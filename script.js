@@ -84,12 +84,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  resetBtn.addEventListener("click", () => {
-    selectedType = "all";
-    selectedPrice = "all";
-    updateActiveClass(typeButtons, "type", selectedType);
-    updateActiveClass(priceButtons, "price", selectedPrice);
-    filterCards();
+  // Check if reset button exists before adding event listener
+  if (resetBtn) {
+    resetBtn.addEventListener("click", () => {
+      selectedType = "all";
+      selectedPrice = "all";
+      updateActiveClass(typeButtons, "type", selectedType);
+      updateActiveClass(priceButtons, "price", selectedPrice);
+      filterCards();
+    });
+  } else {
+    console.warn("Reset Filters button not found.");
+  }
+
+  // ======== TRANSPORTATION PAGE FILTERING ========
+  const transportButtons = document.querySelectorAll(".transport-btn");
+  const transportSections = document.querySelectorAll(".transport-section");
+
+  transportButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const filter = button.getAttribute("data-filter");
+
+      // Update active state
+      transportButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      // Show/hide transport sections
+      transportSections.forEach(section => {
+        const category = section.getAttribute("data-category");
+        section.style.display = (filter === "all" || category === filter) ? "" : "none";
+      });
+    });
   });
 
   // ======== INITIALIZATION ========
