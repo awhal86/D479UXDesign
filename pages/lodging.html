@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping</title>
-    <script defer src="./script.js"></script>
+    <title>Lodging</title>
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/shopping.css">
+    <link rel="stylesheet" href="../styles/lodging.css">
     <link rel="stylesheet" href="../styles/nav-footer.css">
+    <script defer src="../script.js"></script>
 </head>
 <body>
     <nav>
@@ -25,139 +25,234 @@
                 <li><a href="./dining.html">Dining</a></li>
                 <li><a href="./shopping.html">Shopping</a></li>
                 <li><a href="./activities.html">Activities</a></li>
-                <li class="mobile-only"><a href="./faq.html">FAQ</a></li>
-                <li class="mobile-only"><a href="./contact.html">Contact Us</a></li>
+                <li class="mobile-only"><a href="../pages/faq.html">FAQ</a></li>
+                <li class="mobile-only"><a href="../pages/contact.html">Contact Us</a></li>
             </ul>
     
         </div>
     </nav>
 
-    <main class="shopping-page">
-        <h1 class="title">Shopping</h1>
+    <main class="lodging-page">
+        <h1 class="title">Lodging</h1>
         <p class="info">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, libero. Soluta consequuntur 
-            dolores nulla magnam laudantium, ipsam dolorum ex perspiciatis, voluptatibus unde distinctio placeat 
-            dicta obcaecati cum at debitis quaerat! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, libero. Soluta consequuntur 
-            dolores nulla magnam laudantium, ipsam dolorum ex perspiciatis, voluptatibus unde distinctio placeat 
-            dicta obcaecati cum at debitis quaerat!
+            Taniti has a variety of accommodations to suit every traveler's style and budget. Whether you're 
+            looking for an afforable hostel to meet fellow adventurers, a luxurious resort offering oceanfront 
+            elegance, or a cozy family-owned hotel with personalized service, Taniti has something special waiting 
+            for you. Choose from charming bed and breakfasts nestled among troppical gardens, boutique hotels offer 
+            tranquil escapes, or a resort that promises unparalleled luxury and breath taking views. With options to 
+            suit every need and preference, your perfect island getaway begins here.
         </p>
 
-        <hr>
-        <div class="shop-container">
-            <h2 class="subtitle">Grocery</h2>
-            <div class="convenience-card">
-                <img src="../assets/shopping/quickshell.png" alt="">
-                <h3>QuickShell 24/7</h3>
-                <p class="shopping-type">Convenience</p>
-                <p class="phone-number">(800) 555-0198</p>
+        <div class="lodging-filters">
+            <div class="filter-group">
+                <span>Filter by Type:</span>
+                <button class="filter-btn type-btn active" data-type="all">All</button>
+                <button class="filter-btn type-btn" data-type="Hostel">Hostel</button>
+                <button class="filter-btn type-btn" data-type="Resort">Resort</button>
+                <button class="filter-btn type-btn" data-type="Family Owned Hotel">Family Owned Hotel</button>
+                <button class="filter-btn type-btn" data-type="Bed and Breakfast">Bed and Breakfast</button>
+            </div>
+
+            <div class="filter-group">
+                <span>Filter by Price:</span>
+                <button class="filter-btn price-btn active" data-price="all">All</button>
+                <button class="filter-btn price-btn" data-price="$">$</button>
+                <button class="filter-btn price-btn" data-price="$$">$$</button>
+                <button class="filter-btn price-btn" data-price="$$$">$$$</button>
+                <button class="filter-btn price-btn" data-price="$$$$">$$$$</button>
+            </div>
+  
+        </div>
+        <div class="no-results" id="no-results" style="display: none;">
+        <p>No results match your filters.</p>
+        <button id="reset-filters">Reset Filters</button>
+        </div>
+
+        <section class="lodging-container">
+            <div class="lodging-card" data-type="Hostel" data-price="$">
+                <img src="../assets/lodging/hostel.png" alt="">
+                <h3>Taniti Traveler's Haven</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Hostel</p>
+                <p class="price"><b>Price:</b> $</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.
+                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Resort" data-price="$$$$">
+                <img src="../assets/lodging/azure-pearl.png" alt="">
+                <h3>Azure Pearl Resort</h3>
+                <p class="address"><b>Address:</b> 123 Bayview Avenue, Taniti City, Yellow Leaf Bay</p>
+                <p class="lodge-type"><b>Type:</b> Resort</p>
+                <p class="price"><b>Price:</b> $$$$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.
+                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Family Owned Hotel" data-price="$$">
+                <img src="../assets/lodging/seabreeze.png" alt="">
+                <h3>Seabreeze Inn</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Family Owned Hotel</p>
+                <p class="price"><b>Price:</b> $$</p>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
                     quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
                     recusandae dolor facere laborum quae in architecto cum provident.                </p>
             </div>
-            <div class="grocery-container">
-        
-                <div class="grocery-card">
-                    <img src="../assets/shopping/taniti-central.png" alt="">
-                    <h3>Taniti Market Central</h3>
-                    <p class="shopping-type">Super Market</p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
-                        quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
-                        recusandae dolor facere laborum quae in architecto cum provident.                    </p>
-                </div>
     
-                <div class="grocery-card">
-                    <img src="../assets/shopping/island-grocer.png" alt="">
-                    <h3>Island Grocer Plus</h3>
-                    <p class="shopping-type">Super Market</p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
-                        quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
-                        recusandae dolor facere laborum quae in architecto cum provident.                    </p>
-                </div>
-    
-                <div class="grocery-card">
-                    <img src="../assets/shopping/palm-provisions.png" alt="">
-                    <h3>Palm Provisions</h3>
-                    <p class="shopping-type">Grocery Store</p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
-                        quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
-                        recusandae dolor facere laborum quae in architecto cum provident.                    </p>
-                </div>
-    
-                <div class="grocery-card">
-                    <img src="../assets/shopping/seaside.png" alt="">
-                    <h3>Seaside Mart</h3>
-                    <p class="shopping-type">Grocery Store</p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
-                        quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
-                        recusandae dolor facere laborum quae in architecto cum provident.                    </p>
-                </div>
-            </div>
-    
-            <hr>
-
-            <h2 class="subtitle">Souvenirs</h2>
-
-            <div class="mall-card">
-                
-                <img src="../assets/shopping/the-breeze.png" alt="">
-                <h3>The Breeze Plaza</h3>
-                <p class="shopping-type">Mall</p>
+            <div class="lodging-card" data-type="Family Owned Hotel" data-price="$$$">
+                <img src="../assets/lodging/golden-palm.png" alt="">
+                <h3>Golden Palm Retreat</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Family Owned Hotel</p>
+                <p class="price"><b>Price:</b> $$$</p>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
                     quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
-                    recusandae dolor facere laborum quae in architecto cum provident. Lorem ipsum dolor, 
-                    sit amet consectetur adipisicing elit. Incidunt, libero. Soluta consequuntur 
-                    dolores nulla magnam laudantium, ipsam dolorum ex perspiciatis, voluptatibus unde distinctio placeat 
-                    dicta obcaecati cum at debitis quaerat!
-                </p>
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
             </div>
     
-            <div class="souvenir-container">
-                <div class="souvenir-card">
-                    <img src="../assets/shopping/shell&sand.png" alt="">
-                    <h3>Shell & Sand</h3>
-                    <p class="shopping-type">Souvenir Shop</p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
-                        quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
-                        recusandae dolor facere laborum quae in architecto cum provident.                    </p>
-                </div>
-                <div class="souvenir-card">
-                    <img src="../assets/shopping/taniti-treasures.png" alt="">
-                    <h3>Taniti Treasures</h3>
-                    <p class="shopping-type">Souvenir Shop</p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
-                        quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
-                        recusandae dolor facere laborum quae in architecto cum provident.                    </p>
-                </div>
-                <div class="souvenir-card">
-                    <img src="../assets/shopping/island-echo.png" alt="">
-                    <h3>Island Echo</h3>
-                    <p class="shopping-type">Souvenir Shop</p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
-                        quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
-                        recusandae dolor facere laborum quae in architecto cum provident.                    </p>
-                </div>
-                <div class="souvenir-card">
-                    <img src="../assets/shopping/coconut-corner.png" alt="">
-                    <h3>Coconut Corner</h3>
-                    <p class="shopping-type">Souvenir Shop</p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
-                        quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
-                        recusandae dolor facere laborum quae in architecto cum provident.                    </p>
-                </div>
-        
+            <div class="lodging-card" data-type="Family Owned Hotel" data-price="$$">
+                <img src="../assets/lodging/lagoon-view.png" alt="">
+                <h3>Lagoon View Lodge</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Family Owned Hotel</p>
+                <p class="price"><b>Price:</b> $$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
             </div>
     
-        </div>
+            <div class="lodging-card" data-type="Family Owned Hotel" data-price="$$">
+                <img src="../assets/lodging/coral-bay.png" alt="">
+                <h3>Coral Bay Haven</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Family Owned Hotel</p>
+                <p class="price"><b>Price:</b> $$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Family Owned Hotel" data-price="$$$$">
+                <img src="../assets/lodging/tropical-drift.png" alt="">
+                <h3>Tropical Drift Hotel</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Family Owned Hotel</p>
+                <p class="price"><b>Price:</b> $$$$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Family Owned Hotel" data-price="$$">
+                <img src="../assets/lodging/sunset-cove.png" alt="">
+                <h3>Sunset Cove Inn</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Family Owned Hotel</p>
+                <p class="price"><b>Price:</b> $$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Family Owned Hotel" data-price="$$$">
+                <img src="../assets/lodging/mango-grove.png" alt="">
+                <h3>Mango Grove Lodge</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Family Owned Hotel</p>
+                <p class="price"><b>Price:</b> $$$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Family Owned Hotel" data-price="$$">
+                <img src="../assets/lodging/coconut-sands.png" alt="">
+                <h3>Coconut Sands Inn</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Family Owned Hotel</p>
+                <p class="price"><b>Price:</b> $$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Family Owned Hotel" data-price="$$$$">
+                <img src="../assets/lodging/hidden-lagoon.png" alt="">
+                <h3>Hidden Lagoon Hotel</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Family Owned Hotel</p>
+                <p class="price"><b>Price:</b> $$$$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Bed and Breakfast" data-price="$$$">
+                <img src="../assets/lodging/lazy-parrot.png" alt="">
+                <h3>The Lazy Parrot B&B</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Bed and Breakfast</p>
+                <p class="price"><b>Price:</b> $$$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Bed and Breakfast" data-price="$$">
+                <img src="../assets/lodging/sun-kissed.png" alt="">
+                <h3>Sun-Kissed Shores B&B</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Bed and Breakfast</p>
+                <p class="price"><b>Price:</b> $$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Bed and Breakfast" data-price="$$">
+                <img src="../assets/lodging/island-blossom.png" alt="">
+                <h3>Island Blossom B&B</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Bed and Breakfast</p>
+                <p class="price"><b>Price:</b> $$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
+            </div>
+    
+            <div class="lodging-card" data-type="Bed and Breakfast" data-price="$$$">
+                <img src="../assets/lodging/ocean-mist.png" alt="">
+                <h3>Ocean Mist B&B</h3>
+                <p class="address"><b>Address:</b></p>
+                <p class="lodge-type"><b>Type:</b> Bed and Breakfast</p>
+                <p class="price"><b>Price:</b> $$$</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, totam voluptatum 
+                    quaerat nesciunt reiciendis delectus porro beatae praesentium rem similique eligendi 
+                    recusandae dolor facere laborum quae in architecto cum provident.                </p>
+            </div>
+    
+
+        </section>
     </main>
 
     <footer>
