@@ -1,6 +1,8 @@
 
 .lodging-page {
     padding: 0 20px;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .lodging-container {
@@ -38,6 +40,11 @@
 .lodging-card p {
     padding: 0 15px 15px;
     color: #666;
+}
+
+.lodging-page p,
+.lodging-card p {
+    line-height: 1.6;
 }
 
 .lodging-card:hover {

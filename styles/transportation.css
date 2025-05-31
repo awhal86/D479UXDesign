@@ -1,5 +1,11 @@
 .transportation-page {
     padding: 0 20px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+p {
+    line-height: 1.6;
 }
 
 /* Air container (3 columns) */

@@ -1,5 +1,15 @@
+.shopping-page {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 20px;
+}
+
 .shop-container {
     padding: 20px;
+}
+
+p {
+    line-height: 1.6;
 }
 
 /* Convenience and Mall Cards (each on their own row) */
