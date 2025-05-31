@@ -1,5 +1,49 @@
+
 .activities-container {
-    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 20px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.activity-section {
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.activity-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background-color: #eee;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #333;
+    color: white;
 }
 
 .free-container, 
