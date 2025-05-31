@@ -56,13 +56,6 @@ p {
     color: white;
 }
 
-.type-btn:hover,
-.price-btn:hover,
-.type-btn.active,
-.price-btn.active {
-  background-color: #555;
-  color: white;
-}
 
 
 .no-results {
