@@ -12,6 +12,80 @@
     padding: 20px;
 }
 
+h1{
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.lodging-filters {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-btn {
+    background-color: #eee;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #333;
+    color: white;
+}
+
+.type-btn:hover,
+.price-btn:hover,
+.type-btn.active,
+.price-btn.active {
+  background-color: #555;
+  color: white;
+}
+
+
+.no-results {
+  text-align: center;
+  margin: 30px 0;
+  color: #444;
+}
+
+#reset-filters {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#reset-filters:hover {
+  background-color: #555;
+}
+
+
 
 .lodging-card {
     background-color: #fff;
