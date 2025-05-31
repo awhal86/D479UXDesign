@@ -122,3 +122,4 @@ document.addEventListener("DOMContentLoaded", () => {
   updateActiveClass(priceButtons, "price", selectedPrice);
   filterCards();
 });
+
