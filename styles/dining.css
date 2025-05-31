@@ -1,3 +1,9 @@
+.dining-page {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 20px;
+}
+
 .restaurant-container,
 .pub-container {
     display: grid;
@@ -14,6 +20,10 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+}
+
+p {
+    line-height: 1.6;
 }
 
 .restaurant-card img,
